@@ -18,7 +18,10 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-const CLIENT_URL = "http://localhost:5173";
+const CLIENT_URL = [
+  "http://localhost:5173",
+  "https://fingerprint-auther-frontend.onrender.com"
+];
 const RP_ID = "localhost";
 
 app.use(cors({ origin: CLIENT_URL, credentials: true }));
