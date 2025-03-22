@@ -22,7 +22,7 @@ const CLIENT_URL = [
   "http://localhost:5173",
   "https://fingerprint-auther-frontend.onrender.com"
 ];
-const RP_ID = "localhost";
+const RP_ID = "fingerprint-auther-frontend.onrender.com";
 
 app.use(cors({ origin: CLIENT_URL, credentials: true }));
 
