@@ -4,7 +4,7 @@ const { Pool } = require("pg");
 // Create a PostgreSQL connection pool
 const pool = new Pool({
   user: "webauthn_user",
-  host: "localhost",
+  host: "dpg-cvf9fhjqf0us73fnmsj0-a",
   database: "webauthn",
   password: "genius",
   port: 5432,
