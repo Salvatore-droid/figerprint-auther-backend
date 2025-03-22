@@ -6,7 +6,7 @@ const pool = new Pool({
   user: "webauthn_user",
   host: "dpg-cvf9fhjqf0us73fnmsj0-a",
   database: "webauthn",
-  password: "genius",
+  password: "DrE9IvgndMBXQrN2QKlS2EX9DdROHAF5",
   port: 5432,
 });
 
