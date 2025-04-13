@@ -29,9 +29,9 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-const CLIENT_URL = ["https://fingerprint-auther-frontend.onrender.com"];
-const RP_ID = "fingerprint-auther-frontend.onrender.com"; // Match your Render frontend domain
-const DJANGO_API_URL = "https://human-resource-management-ajfy.onrender.com/"; // Your Django server URL
+const CLIENT_URL = ["http://localhost:5173"];
+const RP_ID = "localhost";
+const DJANGO_API_URL = "http://localhost:8000"; // Your Django server URL
 
 app.use(cors({ origin: CLIENT_URL, credentials: true }));
 
@@ -41,7 +41,7 @@ app.use(cors({ origin: CLIENT_URL, credentials: true }));
 function base64ToBuffer(base64) {
   return Buffer.from(base64, 'base64');
 }
-
+const { v4: uuidv4 } = require('uuid'); // Add at top of file
 
 app.get("/init-register", async (req, res) => {
   const email = req.query.email;
